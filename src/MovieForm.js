@@ -26,7 +26,7 @@ export default function MovieForm({
   }
 
   return (
-    <div className='form-section'>
+    <div className='movie-form-container section'>
       <form className='movie-form' onSubmit={handleSubmit}>
         <label>
             Title: 

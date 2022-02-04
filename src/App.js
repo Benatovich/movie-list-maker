@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='current-section'>
+      <div className='current-movie section'>
         <Movie movie={{
           title: titleForm,
           director: directorForm,
@@ -57,7 +57,7 @@ function App() {
           color: colorForm
         }}/>
       </div>
-      <div className='filter-section'>
+      <div className='movie-filter section'>
         Filter Movies
         <input onChange={(e) => filterMovies(e.target.value)} />
       </div>
