@@ -70,7 +70,12 @@ function App() {
         yearForm={yearForm}
         setYearForm={setYearForm}
         colorForm={colorForm}
-        setColorForm={setColorForm} />
+        setColorForm={setColorForm} 
+      />
+      <MovieList
+        movies={filteredMovies.length ? filteredMovies : allMovies}
+        deleteMovie={deleteMovie}
+      />
     </div>
   );
 }
