@@ -59,7 +59,18 @@ function App() {
       </div>
       <div className='filter-section'>
         Filter Movies
+        <input onChange={(e) => filterMovies(e.target.value)} />
       </div>
+      <MovieForm
+        submitMovie={submitMovie}
+        titleForm={titleForm}
+        setTitleForm={setTitleForm}
+        directorForm={directorForm}
+        setDirectorForm={setDirectorForm}
+        yearForm={yearForm}
+        setYearForm={setYearForm}
+        colorForm={colorForm}
+        setColorForm={setColorForm} />
     </div>
   );
 }
