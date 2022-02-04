@@ -49,7 +49,17 @@ function App() {
 
   return (
     <div className="App">
-      
+      <div className='current-section'>
+        <Movie movie={{
+          title: titleForm,
+          director: directorForm,
+          year: yearForm,
+          color: colorForm
+        }}/>
+      </div>
+      <div className='filter-section'>
+        Filter Movies
+      </div>
     </div>
   );
 }
