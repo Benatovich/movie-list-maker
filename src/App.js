@@ -34,8 +34,19 @@ function App() {
   }
 
   function deleteMovie(id) {
+    const movieIndex = allMovies.findIndex(movie => movie.id === id);
 
+    allMovies.splice(movieIndex, 1);
+
+    setAllMovies([...allMovies]);
   }
+
+  function filterMovies(search) {
+    const fewerMovies = allMovies.filter(movie => movie.title.includes(search));
+
+    search ? setFilteredMovies(fewerMovies) : setFilteredMovies(allMovies);
+  }
+
   return (
     <div className="App">
       
