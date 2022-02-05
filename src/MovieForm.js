@@ -10,14 +10,15 @@ export default function MovieForm({
   function handleSubmit(e) {
     e.preventDefault();
 
-    const newMovie = {
-      title: titleForm,
-      director: directorForm,
-      year: yearForm,
-      color: colorForm,
-    };
+    // const newMovie = {
+    //   title: titleForm,
+    //   director: directorForm,
+    //   year: yearForm,
+    //   color: colorForm,
+    // };
 
-    submitMovie(newMovie);
+    // submitMovie(newMovie);
+    submitMovie();
 
     setTitleForm('');
     setDirectorForm('');
